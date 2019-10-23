@@ -1,0 +1,576 @@
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url("../fonts/Roboto-Italic.ttf");
+}
+
+/* Начало моих стилей */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('../images/template/bg.png') #eedfd2;
+    width: 100%;
+    height: 100%;
+    color: #513a2d;
+    font-family: Roboto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+br {
+    margin: 3px 0;
+}
+
+/* header */
+.header {
+    height: 400px;
+    background: #4e2621 url('../images/template/header-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.clearfix:before {
+    display: table;
+    content: "";
+}
+
+.header_logo {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header_phone {
+    float: right;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo_pic {
+    display: block;
+    max-width: 430px;
+    max-height: 175px;
+}
+
+.phone {
+    display: inline-block;
+    float: right;
+    margin-top: 65px;
+    margin-right: 35px;
+}
+
+.phone_pic {
+    display: block;
+    width: 241px;
+    height: 53px;
+}
+
+
+/* Тело */
+.canvas {
+    width: 1120px;
+    margin: -210px auto -87px;
+}
+
+.top_body {
+    background: url('../images/template/body-top.png');
+    width: 1120px;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+
+/* Навигация */
+
+.nav {
+    width: 1080px;
+    height: 55px;
+    background: url('../images/template/nav-bg.png') #e3bba5;
+    margin: 0 auto 35px;
+}
+
+.nav_list {
+    text-align: justify;
+    width: 735px;
+    height: 55px;
+    margin: -5px auto 0;
+}
+
+.nav_list:after {
+    content: "";
+    width: 100%;
+    height: 0;
+    display: inline-block;
+}
+
+.nav_item {
+    display: inline-block;
+    padding-top: 10px;
+    height: 42px;
+    position: relative;
+}
+
+.nav_title, .nav_dot {
+    display: inline-block;
+    font-family: Roboto-Bold;
+}
+
+.nav_dot {
+    font-size: 26px;
+}
+
+.nav_title {
+    font-size: 20px;
+    color: #513a2d;
+}
+
+.nav_item:hover .nav_title {
+    color: #af182a;
+}
+
+/* Выпадающее меню-топ */
+.sub_menu {
+    display: none;
+    background-color: #f2ddd1;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+}
+
+.catalog {
+    width: 180px;
+    left: -50px;
+}
+
+.services {
+    width: 100px;
+    left: -15px;
+}
+
+.sub_menu li {
+    font-size: 14px;
+    font-weight: bolder;
+    border: 1px solid #e3bca6;
+    min-height: 30px;
+    padding: 10px;
+    margin-bottom: -1px;
+}
+
+.sub_menu a {
+    color: #513a2d;
+}
+
+.sub_menu a:hover {
+    color: #af182a;
+}
+
+.nav_list > li:hover .sub_menu {
+    display: block;
+}
+
+
+/* Контент */
+.mid_body {
+    position: relative;
+    background: url('../images/template/body-mid.png') repeat;
+    width: 1120px;
+    min-height: 300px;
+    margin: -2px auto 0;
+}
+
+.mid_body:before {
+    background: url('../images/template/left-p.png') repeat;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 90px;
+    width: 38px;
+    height: calc(100% - 90px);
+}
+
+.mid_body:after {
+    background: url('../images/template/right-p.png') repeat;
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 90px;
+    width: 38px;
+    height: calc(100% - 90px);
+}
+
+.alisa {
+    content: "";
+    position: relative;
+    top: 10px;
+    background: url('../images/alisa.png');
+    width: 710px;
+    height: 340px;
+    margin: 0 auto 30px;
+}
+
+.main {
+    position: relative;
+    background-color: #f4e5dc;
+    width: 1040px;
+    min-height: 50px;
+    margin: -1px auto 50px;
+    padding: 15px 0;
+}
+
+.main:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: url('../images/template/content-footer.png') no-repeat;
+    width: 1080px;
+    height: 25px;
+
+}
+
+.dr {
+    color: #af182a;
+    font-weight: bolder;
+}
+
+.video_sl {
+    width: 560px;
+    height: 315px;
+    margin: 25px auto;
+}
+
+.brown {
+    color: #513a2d;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.brown_confi {
+    text-align: center;
+    color: #513a2d;
+    font-weight: bolder;
+}
+
+.blue {
+    color: #3366CC;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.brown:hover {
+    color: #af182a;
+}
+
+.guarantee_img {
+    display: block;
+    margin: 20px auto;
+}
+
+.img_404 {
+    display: block;
+    margin: 20px auto;
+    width: 450px;
+}
+
+.disc_table {
+    margin: 20px auto;
+    border: 1px solid #e3bca6;
+}
+
+.disc_table td {
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/* Таблица дверей */
+.table_d {
+    min-height: 700px;
+    border: 1px solid #F0C8B2;
+    padding: 0 10px;
+}
+
+.name {
+    text-decoration: underline;
+    margin-top: 10px;
+    font-family: Roboto-Bold;
+    font-size: 18px;
+}
+
+.name a:hover {
+    color: #af182a;
+}
+
+.img_d {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.img_d img {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.door-row {
+    width: 100%;
+    border-bottom: 1px solid #e3bca6;
+    font-size: 13px;
+    padding: 5px;
+    margin: 0;
+}
+
+.door-text {
+    padding: 0;
+    margin-right: 5px;
+}
+
+.price {
+    padding: 10px 0;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+}
+
+/* One door */
+
+.one_door_pic {
+    max-width: 95%;
+    margin: 20px 0;
+}
+
+/* Партнеры */
+.partners {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.part_list {
+    text-align: justify;
+}
+
+.part_list:after {
+    content: "";
+    width: 100%;
+    height: 0;
+    display: inline-block;
+}
+
+
+.part_item {
+    display: inline-block;
+}
+
+.img_part {
+    width: 212px;
+    height: 180px;
+}
+
+/* social */
+.social {
+    background: url('../images/template/social.png');
+    width: 1070px;
+    height: 34px;
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+/* footer */
+.empty {
+    height: 87px;
+}
+
+.footer {
+    background: url('../images/template/footer.png');
+    width: 1040px;
+    height: 87px;
+    margin: -87px auto 0;
+    position: relative;
+}
+
+
+/* футер-навигация*/
+.f_nav_list {
+    text-align: justify;
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.f_nav_list:after {
+    content: "";
+    width: 100%;
+    height: 0;
+    display: inline-block;
+}
+
+.f_nav_item {
+    display: inline-block;
+    height: 30px;
+    padding-top: 2px;
+}
+
+
+.f_nav_title, .f_nav_dot {
+    display: inline-block;
+    font-family: Roboto-Bold;
+}
+
+.f_nav_dot {
+    font-size: 16px;
+    color: #e2baa4;
+}
+
+.f_nav_title {
+    font-size: 14px;
+    color: #e2baa4;
+}
+
+.f_nav_title:hover {
+    color: #af182a;
+}
+
+/* Выпадающее меню-бот */
+.f_sub_menu {
+    display: none;
+    background-color: #f2ddd1;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    bottom: 85px;
+}
+
+.f_catalog {
+    width: 140px;
+    left: 30%;
+}
+
+.f_services {
+    width: 90px;
+    left: 40%;
+}
+
+.f_sub_menu li {
+    font-size: 12px;
+    font-weight: bolder;
+    border: 1px solid #e3bca6;
+    min-height: 30px;
+    padding: 4px;
+    margin-bottom: -1px;
+}
+
+.f_sub_menu a {
+    color: #513a2d;
+}
+
+.f_sub_menu a:hover {
+    color: #af182a;
+}
+
+.f_nav_list > li:hover .f_sub_menu {
+    display: block;
+}
+
+
+/* copyright */
+.footer_copyright {
+
+}
+
+.copyright {
+    font-size: 14px;
+    color: #e2baa4;
+    text-align: center;
+}
+
+.copy_color {
+    color: white;
+}
+
+.copy_link {
+    font-size: 12px;
+    color: #e2baa4;
+    text-decoration: underline;
+}
+
+.copy_link:hover {
+    color: #af182a;
+}
+
+.layout {
+    color: #ffe1cf;
+}
+
+.layout-form {
+
+}
+
+.f_label, .f_select, .f_submit {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.admin_icon {
+    color: #ffe1cf;
+    font-size: 20px;
+}

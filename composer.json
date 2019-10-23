@@ -1,0 +1,12 @@
+{
+    "name": "evixen/exframe",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "exframe\\": "vendor/exframe",
+            "app\\": "app"
+        }
+    },
+"description": ""}
